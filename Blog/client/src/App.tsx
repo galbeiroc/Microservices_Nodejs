@@ -1,9 +1,12 @@
+import PostCreate from "./components/PostCreate";
+
 function App() {
   return (
-    <>
-      <h1>Blog</h1>
-    </>
-  )
+    <div className="container">
+      <h1 className="text-center">Blog App</h1>
+      <PostCreate />
+    </div>
+  );
 }
 
-export default App
+export default App;
