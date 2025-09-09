@@ -18,7 +18,6 @@ app.post('/posts/:id/comments', (req, res) => {
   const { content } = req.body;
   const commentId = randomBytes(4).toString('hex');
   const comments = commentsByPostId[id] || [];
-  console.log(comments);
   comments.push({ id: commentId, content })
   commentsByPostId[id] = comments;
 
